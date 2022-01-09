@@ -7,7 +7,7 @@ namespace PROIECTfizica
         static void Main(string[] args)
         {
             BluetoothModule  module = new BluetoothModule();
-            module.Conect();
+            module.Conect().GetAwaiter().GetResult();
         }
     }
 }
